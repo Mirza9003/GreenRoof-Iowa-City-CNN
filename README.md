@@ -45,7 +45,7 @@ The study evaluates the cooling potential of green roof implementation using:
 ---
 
 <p align="center">
-  <img src="Fig10_GR_Simulation_Maps.png" width="1000">
+  <img src="GR_Simulation_Maps.png" width="1000">
 </p>
 
 <p align="center">
