@@ -4,7 +4,7 @@
 <p align="center">
 
 [![Live Web App](https://img.shields.io/badge/Live-Web_App-blue?style=for-the-badge)](https://w75frp.csb.app/)
-[![Interactive Web Map](https://img.shields.io/badge/Interactive-Web_Map-green?style=for-the-badge)](https://Mirza9003.github.io/green-roof-iowa-city-cnn/GreenRoof_Interactive_Map_v2.html)
+[![Interactive Web Map](https://img.shields.io/badge/Interactive-Web_Map-green?style=for-the-badge)](https://mirza9003.github.io/green-roof-iowa-city-cnn/)
 [![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](LICENSE)
 [![Research](https://img.shields.io/badge/Research-GeoAI-orange?style=for-the-badge)]()
 
@@ -53,14 +53,14 @@ The interactive dashboard allows users to:
 # Interactive Web Map
 
 🗺️ **Interactive Web Map**  
-https://Mirza9003.github.io/green-roof-iowa-city-cnn/GreenRoof_Interactive_Map_v2.html
+https://mirza9003.github.io/green-roof-iowa-city-cnn/
 
 <p align="center">
   <img src="InteractiveWebMap_IA.png" width="1000">
 </p>
 
 <p align="center">
-<em>Interactive building-level cooling map showing DLST distribution, thermal hotspots, and predicted green-roof cooling potential.</em>
+<em>Interactive building-level cooling map showing DLST distribution, thermal hotspots, and predicted green roof cooling potential.</em>
 </p>
 
 Features:
@@ -88,7 +88,14 @@ Features:
 
 # Overview
 
-This repository contains the reproducible codebase for a **green roof urban heat island mitigation study** in **Downtown Iowa City, Iowa**. The workflow integrates **LiDAR-derived urban morphology**, **satellite remote sensing**, and **deep learning models** to predict **daytime land surface temperature (DLST)** and simulate **green roof cooling potential**.
+This repository contains the reproducible codebase for a **green roof urban heat island mitigation study** in **Downtown Iowa City, Iowa**. The workflow integrates:
+
+- LiDAR derived urban morphology  
+- Satellite remote sensing  
+- Deep learning models  
+- Spatial CNN architecture  
+
+to predict **daytime land surface temperature (DLST)** and simulate **green roof cooling potential**.
 
 ---
 
@@ -101,7 +108,7 @@ This repository contains the reproducible codebase for a **green roof urban heat
 # Author
 
 **Mirza Md Tasnim Mukarram**  
-PhD Researcher, GeoAI & Climate Resilience  
+PhD Researcher | GeoAI | Climate Resilience  
 University of Iowa  
 2026
 
@@ -115,8 +122,8 @@ University of Iowa
 | Test R² | 0.974 |
 | RMSE | 0.842 °F |
 | K-Fold R² | 0.962 ± 0.007 |
-| Mean green-roof cooling | 6.37 °F |
-| Maximum green-roof cooling | 10.27 °F |
+| Mean green roof cooling | 6.37 °F |
+| Maximum green roof cooling | 10.27 °F |
 | Hotspot coverage | 100% pixels > 1 °F |
 
 ---
@@ -138,7 +145,7 @@ Among them, **Spatial CNN achieved the best predictive performance**.
 
 # Input Variables
 
-## LiDAR-Derived Variables
+## LiDAR Derived Variables
 
 - Building Height (BH)  
 - Building Volume Density (BVD)  
@@ -156,33 +163,33 @@ Among them, **Spatial CNN achieved the best predictive performance**.
 
 # Methodology Workflow
 
-### Data Processing
+## Data Processing
 
 1. LiDAR point cloud processing  
-2. DSM, DTM generation  
+2. DSM and DTM generation  
 3. Height normalization (HAG)  
 4. Building footprint extraction  
 
-### Remote Sensing Processing
+## Remote Sensing Processing
 
-5. Sentinel-2 data preprocessing  
-6. NDVI, NDBI computation  
+5. Sentinel 2 preprocessing  
+6. NDVI and NDBI computation  
 7. Water body distance calculation  
 
-### GeoAI Modeling
+## GeoAI Modeling
 
 8. Feature engineering  
 9. Training dataset creation  
 10. Model benchmarking  
 11. Spatial CNN optimization  
 
-### Simulation
+## Simulation
 
 12. DLST prediction  
 13. Green roof scenario modeling  
 14. Cooling potential mapping  
 
-### Visualization
+## Visualization
 
 15. Interactive dashboard  
 16. Web GIS mapping  
