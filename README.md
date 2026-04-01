@@ -4,7 +4,7 @@
 <p align="center">
 
 [![Live Web App](https://img.shields.io/badge/Live-Web_App-blue?style=for-the-badge)](https://w75frp.csb.app/)
-[![Interactive Map](https://img.shields.io/badge/Interactive-Web_Map-green?style=for-the-badge)](GreenRoof_Interactive_Map_v2.html)
+[![Interactive Web Map](https://img.shields.io/badge/Interactive-Web_Map-green?style=for-the-badge)](https://Mirza9003.github.io/green-roof-iowa-city-cnn/GreenRoof_Interactive_Map_v2.html)
 [![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](LICENSE)
 [![Research](https://img.shields.io/badge/Research-GeoAI-orange?style=for-the-badge)]()
 
@@ -53,7 +53,7 @@ The interactive dashboard allows users to:
 # Interactive Web Map
 
 🗺️ **Interactive Web Map**  
-[Open Interactive Map](GreenRoof_Interactive_Map_v2.html)
+https://Mirza9003.github.io/green-roof-iowa-city-cnn/GreenRoof_Interactive_Map_v2.html
 
 <p align="center">
   <img src="InteractiveWebMap_IA.png" width="1000">
@@ -81,7 +81,7 @@ Features:
 </p>
 
 <p align="center">
-<em>Spatial CNN–based simulated daytime land surface temperature reduction under green roof implementation in Downtown Iowa City, Iowa.</em>
+<em>Spatial CNN based simulated daytime land surface temperature reduction under green roof implementation in Downtown Iowa City, Iowa.</em>
 </p>
 
 ---
@@ -94,11 +94,16 @@ This repository contains the reproducible codebase for a **green roof urban heat
 
 # Study Title
 
-**Exploring the Cooling Potential of Green Roofs for Mitigating Urban Heat Islands Using LiDAR, Satellite Remote Sensing, and Spatial Convolutional Neural Networks: A Case Study of Downtown Iowa City, Iowa**
+**Climate-Resilient Urban Cooling Using LiDAR-Derived Urban Morphology and Spatial Deep Learning: A GeoAI Framework for Green Roof Assessment in Downtown Iowa City, Iowa**
 
-**Author**  
-Mirza Md Tasnim Mukarram  
-University of Iowa (2026)
+---
+
+# Author
+
+**Mirza Md Tasnim Mukarram**  
+PhD Researcher, GeoAI & Climate Resilience  
+University of Iowa  
+2026
 
 ---
 
@@ -136,7 +141,7 @@ Among them, **Spatial CNN achieved the best predictive performance**.
 ## LiDAR-Derived Variables
 
 - Building Height (BH)  
-- Building Density (BVD)  
+- Building Volume Density (BVD)  
 - Sky View Factor (SVF)  
 - Surface Roughness (SR)  
 - Building Roof Index (BRI)  
@@ -151,13 +156,37 @@ Among them, **Spatial CNN achieved the best predictive performance**.
 
 # Methodology Workflow
 
-1. LiDAR data processing  
-2. Satellite data extraction  
-3. Feature engineering  
-4. Model training  
-5. Spatial CNN optimization  
-6. Cooling simulation  
-7. Interactive visualization  
+### Data Processing
+
+1. LiDAR point cloud processing  
+2. DSM, DTM generation  
+3. Height normalization (HAG)  
+4. Building footprint extraction  
+
+### Remote Sensing Processing
+
+5. Sentinel-2 data preprocessing  
+6. NDVI, NDBI computation  
+7. Water body distance calculation  
+
+### GeoAI Modeling
+
+8. Feature engineering  
+9. Training dataset creation  
+10. Model benchmarking  
+11. Spatial CNN optimization  
+
+### Simulation
+
+12. DLST prediction  
+13. Green roof scenario modeling  
+14. Cooling potential mapping  
+
+### Visualization
+
+15. Interactive dashboard  
+16. Web GIS mapping  
+17. Research visualization outputs  
 
 ---
 
@@ -170,5 +199,6 @@ Among them, **Spatial CNN achieved the best predictive performance**.
 ├── GR_Simulation_Maps.png
 ├── Model_App.png
 ├── InteractiveWebMap_IA.png
+├── Fig10_GR_Simulation_Maps.png
 ├── README.md
 ├── LICENSE
