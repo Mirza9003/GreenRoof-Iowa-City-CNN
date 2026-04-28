@@ -1,39 +1,52 @@
+<div align="center">
+
 # Urban Heat Island Mitigation Using Deep Learning, LiDAR, and Satellite Remote Sensing  
+
 ### Spatial CNN-Based Green Roof Cooling Assessment in Downtown Iowa City, Iowa
 
 <p align="center">
-
-[![Live Web App](https://img.shields.io/badge/Live-Web_App-FFCD00?style=for-the-badge&labelColor=111111)](https://w75frp.csb.app/)
-[![Interactive Web Map](https://img.shields.io/badge/Interactive-Web_Map-2F6B45?style=for-the-badge&labelColor=111111)](https://mirza9003.github.io/GreenRoof-Iowa-City-CNN/)
-[![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](LICENSE)
-[![Research](https://img.shields.io/badge/Research-GeoAI-orange?style=for-the-badge)]()
-
+  <a href="https://w75frp.csb.app/">
+    <img src="https://img.shields.io/badge/Live-Web_App-FFCD00?style=for-the-badge&labelColor=111111" alt="Live Web App">
+  </a>
+  <a href="https://mirza9003.github.io/GreenRoof-Iowa-City-CNN/GreenRoof_Interactive_Map_Iowa_FINAL_NO_OVERLAP.html">
+    <img src="https://img.shields.io/badge/Interactive-Web_Map-2F6B45?style=for-the-badge&labelColor=111111" alt="Interactive Web Map">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge" alt="MIT License">
+  </a>
+  <img src="https://img.shields.io/badge/Research-GeoAI-orange?style=for-the-badge" alt="GeoAI Research">
 </p>
 
+</div>
+
 ---
+
+<div align="center">
 
 ## Live Interactive Research Platform
 
-This repository presents a reproducible GeoAI framework for evaluating green roof cooling potential in Downtown Iowa City, Iowa. The workflow integrates airborne LiDAR-derived urban morphology, satellite remote sensing, and spatial deep learning to model daytime land surface temperature, identify thermal hotspots, and simulate green roof-based urban heat mitigation.
+This repository presents a reproducible GeoAI framework for evaluating green roof cooling potential in **Downtown Iowa City, Iowa**. The workflow integrates airborne LiDAR-derived urban morphology, satellite remote sensing, and spatial deep learning to model daytime land surface temperature, identify thermal hotspots, and simulate green roof-based urban heat mitigation.
 
 The current interactive interface presents the **July 20, 2023 Iowa City case study**. The full modelling workflow can be reproduced for additional dates by regenerating date-specific daytime land surface temperature, NDVI, NDBI, and solar-radiation rasters.
 
+</div>
+
 ---
+
+<div align="center">
 
 ## Live Web Application
 
 **Live Web Application:**  
-https://w75frp.csb.app/
+[https://w75frp.csb.app/](https://w75frp.csb.app/)
 
-<p align="center">
-  <img src="App.png" width="1000">
-</p>
+<img src="App.png" width="1000">
 
-<p align="center">
 <em>Interactive Spatial CNN dashboard for green roof cooling simulation, model comparison, hotspot visualization, sensitivity analysis, and reproducibility guidance.</em>
-</p>
 
-The dashboard provides:
+</div>
+
+### Dashboard Capabilities
 
 - Interactive research interface for the green roof cooling pipeline  
 - Spatial CNN model architecture summary  
@@ -44,14 +57,20 @@ The dashboard provides:
 
 ---
 
+<div align="center">
+
 ## Interactive Web Map
 
 **Interactive Web Map:**  
-https://mirza9003.github.io/GreenRoof-Iowa-City-CNN/
+[https://mirza9003.github.io/GreenRoof-Iowa-City-CNN/GreenRoof_Interactive_Map_Iowa_FINAL_NO_OVERLAP.html](https://mirza9003.github.io/GreenRoof-Iowa-City-CNN/GreenRoof_Interactive_Map_Iowa_FINAL_NO_OVERLAP.html)
 
-The interactive web map visualizes daytime land surface temperature, thermal hotspots, green roof cooling potential, building-height effects, and the study boundary for Downtown Iowa City.
+<img src="InteractiveMapLive.png" width="1000">
 
-Map capabilities include:
+<em>Interactive web GIS map showing daytime land surface temperature, thermal hotspots, green roof cooling potential, building-height effects, and the study boundary for Downtown Iowa City.</em>
+
+</div>
+
+### Map Capabilities
 
 - Street and satellite basemaps  
 - Daytime land surface temperature visualization for July 20, 2023  
@@ -62,91 +81,83 @@ Map capabilities include:
 - Study summary panel  
 - Iowa black and gold dashboard styling  
 
-> Note: The local file path version of the map, such as `file:///E:/...`, works only on the author’s computer. For public sharing, the final HTML map should be uploaded to GitHub Pages and renamed to `index.html`.
-
 ---
+
+<div align="center">
 
 ## Green Roof Cooling Simulation
 
-<p align="center">
-  <img src="Fig07_GreenRoof_Simulation.png" width="1000">
-</p>
+<img src="Fig07_GreenRoof_Simulation.png" width="1000">
 
-<p align="center">
 <em>Spatial CNN-based green roof cooling simulation showing observed daytime land surface temperature, simulated cooling, and building-height-related cooling potential in Downtown Iowa City.</em>
-</p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Input Parameters
 
-<p align="center">
-  <img src="Fig01_Input_Parameters.png" width="1000">
-</p>
+<img src="Fig01_Input_Parameters.png" width="1000">
 
-<p align="center">
 <em>Spatial distribution of major urban morphology and remote sensing predictors used in the Spatial CNN model.</em>
-</p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Model Performance
 
-<p align="center">
-  <img src="Fig02_Model_Performance.png" width="1000">
-</p>
+<img src="Fig02_Model_Performance.png" width="1000">
 
-<p align="center">
 <em>Comparison of machine learning and deep learning models using training, test, and 10-fold cross-validation metrics.</em>
-</p>
 
-<p align="center">
-  <img src="Fig03_Predicted_vs_Actual.png" width="1000">
-</p>
+<br><br>
 
-<p align="center">
+<img src="Fig03_Predicted_vs_Actual.png" width="1000">
+
 <em>Predicted versus observed daytime land surface temperature comparison for all evaluated models.</em>
-</p>
 
-<p align="center">
-  <img src="Fig04_10Fold_CV.png" width="1000">
-</p>
+<br><br>
 
-<p align="center">
+<img src="Fig04_10Fold_CV.png" width="1000">
+
 <em>Ten-fold cross-validation performance across all six models.</em>
-</p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Explainability and Sensitivity Analysis
 
-<p align="center">
-  <img src="Fig05_Sensitivity_Analysis.png" width="1000">
-</p>
+<img src="Fig05_Sensitivity_Analysis.png" width="1000">
 
-<p align="center">
 <em>Sensitivity analysis of input predictors based on model performance degradation when each predictor is removed from the Spatial CNN model.</em>
-</p>
 
-<p align="center">
-  <img src="Fig06_SHAP_Summary.png" width="1000">
-</p>
+<br><br>
 
-<p align="center">
+<img src="Fig06_SHAP_Summary.png" width="1000">
+
 <em>SHAP-based explainability analysis for the Spatial CNN model.</em>
-</p>
+
+</div>
 
 ---
 
+<div align="center">
+
 ## Urban Morphology and Cooling Relationships
 
-<p align="center">
-  <img src="Fig08_Scatter_Relationships.png" width="1000">
-</p>
+<img src="Fig08_Scatter_Relationships.png" width="1000">
 
-<p align="center">
 <em>Relationships between urban morphological variables and simulated green roof cooling response.</em>
-</p>
+
+</div>
 
 ---
 
